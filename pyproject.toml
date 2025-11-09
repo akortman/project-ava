@@ -1,0 +1,44 @@
+[project]
+name = "project-ava"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "build123d>=0.10.0",
+    "cadquery>=2.6.1",
+    "ocp-vscode>=3.0.1",
+    "ruff>=0.14.9",
+    "ty>=0.0.1a33",
+]
+
+[tool.uv]
+package = true
+
+[tool.setuptools]
+packages = ["ava"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "D100", # undocumented-public-module
+    "D103", # undocumented-public-function
+    "D104", # undocumented-public-package
+    "D203", # incorrect-blank-line-before-class (incompatible with `no-blank-line-before-class` (D211))
+    "D212", # multi-line-summary-first-line (incompatible with `multi-line-summary-second-line` (D213))
+    "T201", # print
+    "SIM117",
+    "S101", # assert
+    "W605", # invalid-escape-sequence - because we want ascii art :)
+    "TD", # todos
+    "FIX002", # TODO
+]
+
+[tool.ruff.lint.pycodestyle]
+max-line-length = 120
