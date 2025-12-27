@@ -1,0 +1,3 @@
+[default.extend-words]
+# "fuel pressure regulator"
+fpr = "fpr"

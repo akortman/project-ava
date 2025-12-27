@@ -9,6 +9,7 @@ dependencies = [
     "cadquery>=2.6.1",
     "ocp-vscode>=3.0.1",
     "ruff>=0.14.9",
+    "svgpathtools>=1.7.2",
     "ty>=0.0.1a33",
 ]
 

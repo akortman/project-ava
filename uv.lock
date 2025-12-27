@@ -1572,6 +1572,7 @@ dependencies = [
     { name = "cadquery" },
     { name = "ocp-vscode" },
     { name = "ruff" },
+    { name = "svgpathtools" },
     { name = "ty" },
 ]
 
@@ -1581,6 +1582,7 @@ requires-dist = [
     { name = "cadquery", specifier = ">=2.6.1" },
     { name = "ocp-vscode", specifier = ">=3.0.1" },
     { name = "ruff", specifier = ">=0.14.9" },
+    { name = "svgpathtools", specifier = ">=1.7.2" },
     { name = "ty", specifier = ">=0.0.1a33" },
 ]
 
