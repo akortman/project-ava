@@ -32,8 +32,8 @@ def angle_between(u: float, v: float) -> float:
 
 def arc_endpoint_to_center(  # noqa: PLR0913
     *,
-    start: Vec2,
-    end: Vec2,
+    start: complex,
+    end: complex,
     flag_a: bool,
     flag_s: bool,
     radius: float,
